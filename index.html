@@ -1,0 +1,32 @@
+ <!-- MOSTRAR E OCULTAR PARÁGRAFO: -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar e Ocultar Parágrafo</title>
+    <style>
+        #meuParagrafo {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="meuParagrafo">Este é um parágrafo que pode ser ocultado ou mostrado.</p>
+    <button onclick="toggleParagrafo()">Mostrar/Ocultar</button>
+
+    <script>
+        function toggleParagrafo() {
+            var paragrafo = document.getElementById("meuParagrafo");
+            if (paragrafo.style.display === "none") {
+                paragrafo.style.display = "block";
+            } else {
+                paragrafo.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
